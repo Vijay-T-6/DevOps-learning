@@ -1,0 +1,158 @@
+
+
+merged local to remote but not able to see changes in remote what could be the reason
+
+========
+how to test particular commit
+git checkout commithash (detached HEAD state)
+we can to test on this commit and add new commits here and to save these new commits we can create branch using
+git switch -c branchname
+==================
+how to check local is ahead or behind of remote
+
+git log --oneline --left-right origin/main...main
+git diff origin/main master
+
+=========
+how to push a tag for release
+git push origin tag
+git push origin --tags
+
+git push origin --delete tag
+git push origin --delete tag1 tag2 tag3
+git tag -l | xargs -n 1 git push origin --delete(it will delete all remote tags)
+git ls-remote --tags origin
+
+================
+how to check commit id belongs to which branch
+git branch --contains -commitid
+
+============
+how to list remote branches
+git branch -r
+or git fetch --all then git branch -r
+
+===========
+how to check changes of remote branch without effecting local
+git fetch
+git log HEAD..origin/main
+
+or 
+git fetch repo url
+cat .git/FETCH_HEAD
+
+===================
+git patch
+
+git format-patch -1 HEAD -->creates a patch file from last commits.
+git apply or git am -->applies the patch to another repo.
+It’s a great way to share changes without pushing to a remote.
+
+git diff commitid f1 > file.patch
+
+====================
+how to copy file from one branch to other branch without commit
+
+git checkout source-branch -- path/to/file
+git restore --source source-branch path/to/file
+
+===========================
+how to clean untracked files
+git clean -f, (forece removal of files only)
+git clean -d -f (files and direc)
+git clean -n (preview what are going to delete)
+===================
+how to split large commit to smaller commits
+git rebase -I HEAD~1
+git reset HEAD^
+git add -p
+git commit -m "small commit"
+git rebase --continue
+
+=====================
+git describe
+==========
+how to push a single commit to remote
+if it is recent commit and commits then we can push using
+git push origin branch
+
+but if it is one particular commit other than recent one then it is not possible directly
+create new branch
+cheerypick commit id
+then push this branch
+=========
+how to clone only particular branch
+git clone --branch branch-name --single-branch https://github.com/username/repository.git
+=========
+how to rename a repo branch
+for local repo
+git branch -m old new
+
+for remote repo
+git push origin --delete oldbranch
+git push origin new branch name
+
+or 
+
+git push origin <local-branch-name>:refs/heads/<new-remote-branch-name>
+
+============
+how to delete repo branch
+git push origin --delete branch
+
+===============
+can create fork locally
+alias in git
+git config --global alias.<alias name> 'git command'
+git config --global --unset alias.<alias name>
+
+==================
+how to archive whole git repo
+
+tar -czf my-repo-archive.tar.gz my-repo/
+
+git archive --format=tar.gz --output=repo.tar.gz main
+
+================
+comparing branches( with git log)
+git log branch1..branch2
+=================
+how to check commits of particular user
+
+git log --author="Username"
+==========
+how to remove tags from remote
+git push origin --delete tagname
+git push origin :refs/tags/tagname
+==================
+how to sync feat with main 
+merge or rebase
+=========
+git graph
+
+git log --oneline --graph --all --decorate
+================
+
+can we prevent push some files from local to repo
+.gitignore
+=======
+clone repo but avoid full history(shallow clone)
+
+git clone --depth 1 https://github.com/user/repo.git
+==========
+how many lines added in commit id
+git show --numstat commitid
+==========
+how to stash local files
+
+how to take backup of branch
+create new branch from it or git archive --format tar
+git fetch --tags
+==========
+to change url of origin
+git remote set-url origin new url
+===========
+list all commit id in last 7 days
+git log --since="1 day ago" --pretty=format:"%H"
+============
+git stash show
