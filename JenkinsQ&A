@@ -25,4 +25,16 @@ what could be the reasons for pipeline slow
 how to restrict job access using pattern
 multibranch
 how to upgrade Jenkins
+how to use different steps of Jenkins file to use multiple jobs
+shared library
+Why the Build Fails When Disk Is Full
+what are different errors we get while execution
+how to cleanup old builds in Jenkins
+next available executor error in Jenkins
+how to fix if disk is full then by what reason build will fail
+how different ram issues disk issues and cpu issues in Jenkins 
+how to trigger build from vcs in secureway
+locally build is success but in pipeline it is failed
+if Jenkins crashes how to debug
+
  
