@@ -1,0 +1,28 @@
+what is upstream and downstream projects
+how to access opensources like flipkart without ip and port
+can we write shell script in Jenkins
+what could be the reason for agent offline
+build failure
+mail is not delivered
+cd includes prod or not
+smtp
+ssl tsl difference
+how can we get to know which agent is ready to run
+why delay happens during build how to debug
+need to learn paths in Jenkins
+how automatically scale Jenkins agent why running pipeline
+how to avoid downtime of Jenkins high availability 
+builds are happening slowly how to confi
+shared pipeline library rolebased
+how can we get to know agent is free or not from Jenkins
+upstream and downstream projects
+what precauyions to take upgrading Jenkins -backup
+mail set up-how to add mail set up in Jenkins file
+how to prevent Jenkins to consume less load
+how to cleanup old builds
+Jenkins doesn't push even after GitHub push
+what could be the reasons for pipeline slow
+how to restrict job access using pattern
+multibranch
+how to upgrade Jenkins
+ 
