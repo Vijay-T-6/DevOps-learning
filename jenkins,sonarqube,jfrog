@@ -1,0 +1,32 @@
+filesystem,fstab
+what are different scripts u have written
+jfrog how it is going to know which one going to pick to deploy(tag names in pom.xml)
+how the jfrog maintains versions of build and how docker going to pickup latest one
+after going to JFROG from there where artifacts will go
+after connection establishment also i am able to connect but port 22 is not getting
+how many scripts u have written in ur organization
+where really parallel stages or steps useful
+what errors devops guys really work if build fails
+SonarQube errors
+in cicd deploy hanged what could be the reason and how to debug
+how to work on rescue instance
+agent any, agent none
+is there any way check users active or mot( active inactive)
+person not able to access(VPN,cache,...
+Jenkins down how to debug, what actions you will perform to become normal
+maximum no of executors
+how to say node is healthy or not
+what is pom.xml why it is required
+how to bypass some errors in SonarQube
+api response is 200
+who will take the build from JFROG to deploy in envs
+how many pipelines u have written, and what is the purpose
+what are major errors found in console output
+mandatory plugins for Jenkins
+when push happens pipeline not triggered 
+how to know at what stage Jenkins hanged
+job running fine with master and not on slave, what could be the reason
+shared the library
+env var and where u use it
+upstream and downstream example 
+
