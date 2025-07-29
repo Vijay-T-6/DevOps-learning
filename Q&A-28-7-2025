@@ -1,0 +1,66 @@
+Jenkins running out of space how to manage old builds
+how to convert lower case file names to a uppercase filenames
+how do u set a limit that no user can create a file larger than 1 gb
+how to configure a Jenkins job after other Jenkins job
+how do u simulate high memory usage for testing
+how do u find modified files in last one day
+if u push to specific folder only my Jenkins job should trigger. how?
+by using Jenkins tags how to deploy
+if the port is already is in use how to kill it
+how to deploy apps with 0 downtime
+shell script runs manually but fails in Jenkins
+how to delete blank lines from a file
+user not able to ssh to server
+server keeps crashing what could be the reason
+how do u secure Jenkins
+how to pass parameters to Jenkins pipeline
+how to create shared library for Jenkins pipeline
+server is is high load but low cpu
+how to print variable and string at a time
+how to validate output of a shell command in python
+how to monitor Jenkins builds on alert of failure
+write a script to check whether the website is up are down
+loop the list of files and print the line count in it.
+for file in files
+do
+	echo $line |
+
+for file in *.log; do
+  echo "$file: $(wc -l < "$file")"
+done
+==========
+what is the output of 
+print(5 // 2, 5 / 2)
+
+what is the output of 
+for i in range(3):
+    print(i)
+else:
+    print("Done")
+
+what is the output of 
+print(type(type(5)))
+
+what is the output of 
+class 'type
+a = [1, 2, 3]
+b = a
+a = [4, 5, 6]
+print(b)
+
+what is the output of 
+print([] or "Python")
+
+what is the output of 
+print("Hello" or "World")
+print("apple" > "Apple")
+print(3 * [7])
+print(3 * "7")
+print("hi" * 3)
+print((1, 2) * 3)
+
+[] is []
+
+a = 10
+b = 20
+print("A") if a > b else print("B")
