@@ -1,0 +1,291 @@
+convert lowercase name files to uppercase
+set limit so that user cannot create files larger than 1mb
+schedule recurring task that run every Monday 3 am
+apply commit for another branch without merging whole branch
+find duplicate lines in large files
+how to ensure to run the job only after multiple jobs run--->build after other project
+store secrets in jenkins-->env vars and credentials
+how do you simulate high memory usage for testing*********************stress
+if it is only pushed to specific folder in git trepo--pipeline should trigger---> changeset (other than multibrach-pipe)
+want to use Jenkins tags 
+Jenkins buiils is failng randomly so want to cleanup ---how?
+Jenkins job failed with permission Denied-->what to do?---?check script perms to execute or not
+deploy apps with zero downtime
+shellscript runs manually file but in Jenkins failimg
+
+
+
+
+clone private GitHub repo
+delete blank lines
+check ip address of host-->hostname -s
+user cant ssh into server-->check port/server status up/down /logs
+service keep crashing-->what could be issue
+backup all .conf files in etc
+how do you secure jenkins--matrix/
+pass parameters to jennkins pipeline
+how to create shared libraries 
+what happens if pipeline fail in middle--complete job will fail
+server has high load but low cpu usage--->high io wait /zombie processes
+delete and arcgieve log files older than 30 days
+
+
+setup Jenkins jon to trigger on every push
+loop through list of files and print line count
+	for file in *.log; do
+  echo "$file: $(wc -l < "$file")"
+done
+
+for i in range(3):
+    print(i)
+else:
+    print("Done")
+
+print(type(type(5)))
+
+a = [1, 2, 3]
+b = a
+a = [4, 5, 6]
+print(b)
+
+print([] or "Python")
+print("apple" > "Apple")-->true -->lowercase has high asciii
+print(3 * [7])
+print(3 * "7")
+print("hi" * 3)
+print((1, 2) * 3)
+valdate the o/p of shell command in python
+lowercase filenames to uppercase
+
+—————————-
+
+-manager wants to overcome cost of licences, infrastructure, maintenance etc: SAAS
+-write IAM policy on different scenarios
+-accessing resource for short duration: sts assume role
+-why chose inline policy over managed policy? does it override managed policy
+-from within ec2 instance how do u verify which IAM role is currently being used
+-ur ec2 instance cant connect to the internet? route table?
+-how do u give only read access to aws via cli
+-company uses gmail
+-which model do u prefer for jenkins with control over plugins
+-why mumbai over hyderabad region?
+-run a application without developer knowledge: SAAS?
+-dev wants to write code directly on browser: PAAS
+——————-
+
+ideal ec2 instance, low cpu for one hour and shut it down
+for 10 managed policies do we pay
+unable to log in ec2 instance? what could be reason? how to check?
+what is sys check
+what could be the reason that logs are not coming into log group
+2 by 2 check
+can u increase memory of existing instance
+what options available in instance in console
+how to alert if there is "error" in cloudwatch log
+delayed SNS alert? reason?
+*what is pubic ip and private ip? why instance gets a different public ip everytime?
+how on prem application communicated temporarily with s3?
+*accidentally deleted pem file
+reason for insufficient data in alarm
+accidentally deleted access key
+cannot SSH into ec2 instance
+——-/////
+
+components of EC2 instance--> left panel
+track memory utilization in cloudwatch agent
+list some global services in AWS
+dashboard to track mem usaage of all servers under one domain(application)
+can we create alarm for 2/2 status check
+will s3 bucket chargeable?
+———///—/
+
+1. post build actions in jenkins pipeline apart from success, failure and always.
+2. If your CI/CD build is failing during artifact upload in automatic pipelines but succeeds manually
+3.Upload in the wrong path in jfrog how to rectify this
+4.How do we ensure the sonarque failes when the build quality fails tell me script
+5.does sonar generate the reports ? How to generate the report 
+6.If your CI/CD pipeline deployed a build with an error, but the error is not in the code itself. how to rectify this
+———-
+
+1. Introduction to AWS and IAM
+2. IAM,Users,groups,Roles and MFA
+3. AssumeRole,SNS and CloudWatch
+4. Introduction to VPC, Elastic IP and EndPoints
+5. NACl,Sg,Vpc Peering,TransitGateway,VPC flow
+6. EC2,AMI, EC2-Purchasing and instance types 
+7. EBS and EFS
+8. LoadBalancer and Autoscaling
+9. s3
+———//
+
+ebs vs efs
+horizontal vs vertical scaling
+ext4 vs xfs
+~example of sftp and FTP usage
+which AWS service automates AMI creation-->EC2 image builder
+increase root volume size of running ec2 Instance with no downtime
+accidentally deleted important snapshot how to recover it
+how to avoid paying for unused EBS capacity
+EFS(regional) in us-east1  ec2 in us-west-2-->can we mount filesystems--------------->No
+deployed EFS in ec2 but ec2 not able to mount it, what checks need to be done--->NFS port 2049 should be open in security group
+2 ec2 in diff AZ need to share resources with low latency-->EFS or EBS--- >EFS
+3 ec2 instances need to communicate each other over private network
+Gaming app with low latencty, which load balancer--NLB
+EC2 is working fine in Linux but failing in ubuntu
+two ec2 in different VPCs not able to connect even after port is allowed --->SG,NACL
+outdated AMI, need to update with new packages without breaking deployment---->
+create AMI from instance without root voulmes attached to it-->EBS is mandatory
+can we track versions of AMI
+accidentally deleted AMI, but snapshot is there can we recover AMI from snapshot
+EBS volumes shows degraded performance, how to troubleshoot
+prevent accidental deletion of EBS --snapshotlock
+A volume's FileSystem is corrupted, how do you recover it
+migrate millions of small files to EFS very quickly, whick service do you use-->AWS data sync
+mounted EFS but you see its costing more, what could be the reason and how will you avoid it
+————
+
+1. You have an EC2 instance with an EBS root volume, and the instance is accidentally terminated but you need the root volume data.
+
+
+2. “Delete on Termination” is enabled for the EBS root volume — how would you still keep a backup?
+
+
+3. You need to move an EBS volume from one Availability Zone to another.
+
+
+4. Your application is slow, and you suspect it’s due to the EBS volume type — how do you confirm and troubleshoot?
+
+
+5. You want EC2 instances to automatically adjust so the average CPU utilization stays at 50%.
+
+
+6. You have EC2 instances in multiple Availability Zones that need to share the same file system in real time.
+————
+
+11/08/2025
+
+1. What is a Load Balancer (LB)?
+2. What is a Target Group?
+3. Can we use the same Target Group in different Load Balancers?
+4. When you keep all servers inside a Target Group, what does it mean? What happens if you remove servers from it?
+5. How do you define in the Load Balancer which Target Group to use?
+6. How many types of forwarding requests can be sent to a Target Group? (e.g., HTTP, HTTPS, path-based, host-based)
+7. What is priority and weightage in a Load Balancer?
+8. What parameters do you set for internet-facing vs private Load Balancers?
+9. What is the meaning of downtime?
+10. What do you mean by HTTP and HTTPS? How to convert HTTP to HTTPS?
+11. How do you replace an SSL certificate in a Load Balancer?
+12. Where do you check LB logs?
+13. What graphs do you see in the Monitoring tab of LB?
+14. How do you check which Target Group is unhealthy from the Monitoring tab?
+15. What other alerts/alarms can you set in LB?
+16. What alarms can be configured for a Load Balancer?
+17. Which application is used internally? (internal LB)
+18. What do you consider healthy and unhealthy in a Load Balancer?
+19. What is the port number for internet traffic?
+20. Different types of Load Balancers?
+21. Example of an Application Load Balancer (ALB) in the market.
+22. How do you create an entire Load Balancer setup end-to-end?
+23. What is Auto Scaling?
+24. How does Auto Scaling sense traffic to increase or decrease servers? (Parameters it considers)
+25. How to set up Dynamic Scaling in Auto Scaling?
+26. What is scaling protection in Auto Scaling?
+27. What is the configuration process for Auto Scaling?
+28. Why is a Launch Template required for Auto Scaling?
+29. What is vertical scaling and horizontal scaling?
+30. In which case will you pick vertical scaling vs dynamic scaling? Reasons?
+31. How do you create a fresh Auto Scaling group including Target Group and Load Balancer?
+32. How does your Auto Scaling system in the organization work? What thresholds do you monitor (CPU, memory, etc.)?
+33. What monitoring options do you see from the Auto Scaling group page? (Example graphs)
+34. In Auto Scaling, what does the status “Healthy” mean?
+35. Give some example healthy API response codes.
+36. How do you remove one server from Auto Scaling?
+37. When you decrease desired capacity (e.g., 10 to 5), are the removed instances terminated or kept in the console?
+38. How do you set a server to Standby mode?
+39. What is scale-in protection?
+40. What are the additional configurations in Auto Scaling?
+———
+
+12/08/2025
+
+1. Your EC2 instance is experiencing high CPU utilization during traffic spikes. How would you ensure the application scales correctly?
+2. In an Auto Scaling Group, the number of instances reduces even without traffic. Why could this happen?
+3. You have 20 EC2 instances launched from the same AMI. You need to upgrade the application to version V2 without manually updating each instance. How would you do this?
+4. Your EC2 instances generate logs that need to be sent to CloudWatch Logs. How would you set this up?
+5. You have an EC2 instance in a VPC that needs access to a private S3 bucket. How would you grant access only to that instance?
+6. Your application runs in a private subnet and needs access to S3 without using a public IP. How would you set this up?
+7. You need to replicate all S3 bucket data to another AWS region for disaster recovery. How would you configure this?
+8. You have a high-traffic application behind an Application Load Balancer and want users to be routed to the same instance consistently. How would you configure this?
+9. How would you configure an Auto Scaling Group to always have a minimum of two EC2 instances, even during low traffic?
+10.How would you design a VPC with private subnets that do not have direct internet access?
+11. You need Auto Scaling to trigger an alarm when the instance count drops below what is required to handle traffic. How would you configure this?
+12. You have five servers behind a Network Load Balancer, but traffic is not reaching three of them. What could be the possible cause?
+13. How would you restrict access to an S3 bucket so that only specific IP addresses can access the objects?
+14. What is S3 versioning, why would you use it, and how would you enable it?
+15. You want to monitor EC2 CPU utilization and get notified when it exceeds 80% for more than five minutes. How would you configure this?
+16. How would you launch an EC2 instance with minimal cost?
+17. How would you connect your on-premises data center to an AWS VPC securely and privately?
+18. You want to isolate specific VPC resources so that only certain IAM users can access them. How would you do this?
+19. How would you create a VPC across multiple Availability Zones for high availability?
+20. You have two VPCs in different AWS accounts that need to communicate. How would you enable this?
+21. You are using an AMI to launch multiple instances, but it is outdated. How would you update it and use it across all required AWS regions?
+22. You want to launch a new EC2 instance from an AMI but with a different instance type than the original. How would you achieve this?
+23. You need to grant an IAM user read-only access to both S3 and EC2. How would you configure this?
+24. You are migrating an on-premises application to AWS using a VPC, and it requires a private IP address that should not conflict with existing ranges. How would you plan this migration?
+25. When would you choose horizontal scaling over vertical scaling, and vice versa?
+26. You want to scale EC2 instances in an Auto Scaling Group based on health check status. How would you set this up?
+27. How would you configure an Application Load Balancer health check to monitor SSL health?
+———-
+
+"What does EC2 stand for, and what is it used for?",
+    "What are the types of EC2 instances?",
+    "Can you provide the list of EC2 instance types, like T, M series?",
+    "What does T series mean, like t2.micro?",
+    "Explain launch instance configuration.",
+    "What is user data?",
+    "How to update user data?",
+    "How to change instance type?",
+    "How to update EBS from 200GB to 500GB?",
+    "Explain simple steps to modify volume size, extend partition, and verify in OS.",
+    "List steps to extend the partition and filesystem on an EC2 instance.",
+    "What is throughput and IOPS?",
+    "How do we calculate the IOPS?",
+    "Is IOPS calculated as (VolumeReadOps + VolumeWriteOps) per second?",
+    "What is the calculation for throughput?",
+    "Is throughput calculated as (VolumeReadBytes + VolumeWriteBytes) / sec?",
+    "What is downtime in Load Balancer?",
+    "What is the difference between HTTP and HTTPS?",
+    "Where do we use HTTP/HTTPS in Load Balancer?",
+    "How to set and replace SSL certificate?",
+    "How to check Load Balancer logs?",
+    "What alarms can be set for the Load Balancer?",
+    "Where do we set these alarms?",
+    "How do we know which Load Balancer is unhealthy?",
+    "What parameters do we consider for internal and internet Load Balancers?",
+    "Which applications use which Load Balancer?",
+    "What is priority and weightage in Load Balancer?",
+    "How does Load Balancer understand if traffic is high or low?",
+    "What is Layer 7 and Layer 4 in OSI model (in ALB and NLB)?",
+    "Examples of Layer 4 and Layer 7 Load Balancers.",
+    "Is NLB an internet or internal Load Balancer?",
+    "Which port is used for internet traffic?",
+    "What are the ports for TCP and UDP?",
+    "What is dynamic scaling in Auto Scaling?",
+    "How do we check the health of Load Balancer?",
+    "In Auto Scaling, what are the additional configuration settings?",
+    "What is a Target Group?",
+    "If I remove a server from the Target Group, what happens?",
+    "In Auto Scaling, what triggers scaling up or down?",
+    "How does Auto Scaling detect if the Load Balancer is up or down?",
+    "Is Auto Scaling configured in Load Balancer?",
+    "What can we monitor in Auto Scaling?",
+    "What does 'Healthy' status mean in Auto Scaling?",
+    "How do we consider an instance healthy?",
+    "I want to remove a server from Auto Scaling.",
+    "What is 'Standby' in Auto Scaling Group?",
+    "In which scenarios do we choose vertical vs horizontal scaling?",
+    "Can we add a server into a Target Group?",
+    "Can we use different Target Groups in one Load Balancer?",
+    "What is priority and weightage?",
+    "How many types of requests can we send to a Target Group?"
+——-
